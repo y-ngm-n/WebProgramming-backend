@@ -23,26 +23,26 @@ export class User {
   // @Column()
   // image: number;
 
-  @Column()
+  @Column({ default: 0 })
   credit: number;
 
   // @Column({ array: true })
   // lectures: number[];
-  @Column()
+  @Column({ default: "[]" })
   lectures: string;
 
   // @Column({ array: true })
   // friends: number[];
-  @Column()
+  @Column({ default: "[]" })
   friends: string;
 
   // @Column({ array: true })
   // friendsIn: number[];
-  @Column()
+  @Column({ default: "[]" })
   friendsIn: string;
 
   // @Column({ array: true })
   // friendsOut: number[];
-  @Column()
+  @Column({ default: "[]" })
   friendsOut: string;
 };
